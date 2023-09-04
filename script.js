@@ -1,4 +1,3 @@
-// Declaración de la matriz de objetos para la galería
 const galeria = [
     {
       titulo: "Momo",
@@ -22,7 +21,7 @@ const galeria = [
 
   function crearGaleria() {
     const galleryContainer = document.getElementById("gallery");
-    galleryContainer.innerHTML = ""; // Limpiar el contenido anterior
+    galleryContainer.innerHTML = "";
     
     galeria.forEach((item) => {
       const card = `
@@ -40,12 +39,12 @@ const galeria = [
     });
   }
   
-  // Llamada inicial para mostrar la galería completa al cargar la página
+  
   crearGaleria();
 
   function filtrarGaleria(categoria) {
     const galleryContainer = document.getElementById("gallery");
-    galleryContainer.innerHTML = ""; // Limpiar el contenido anterior
+    galleryContainer.innerHTML = "";
     
     galeria.forEach((item) => {
       if (categoria === "all" || item.categoria === categoria) {
@@ -65,7 +64,6 @@ const galeria = [
     });
   }
   
-  // Asignar eventos de clic a los botones de filtro
   document.getElementById("btn-all").addEventListener("click", () => filtrarGaleria("all"));
   document.getElementById("btn-momo").addEventListener("click", () => filtrarGaleria("Momo"));
   document.getElementById("btn-momoYNata").addEventListener("click", () => filtrarGaleria("MomoYNata"));
@@ -75,7 +73,5 @@ const galeria = [
     galeria.sort((a, b) => a.titulo.localeCompare(b.titulo));
     crearGaleria();
   }
-  
-  // Asignar evento de clic al botón de ordenamiento
   document.getElementById("btn-order").addEventListener("click", ordenarGaleria);
   
