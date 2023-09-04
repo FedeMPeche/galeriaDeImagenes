@@ -3,19 +3,19 @@ const galeria = [
     {
       titulo: "Momo",
       descripcion: "El es mi gato 'Momo'",
-      imagen: "/momo.jpeg",
+      imagen: "momo.jpeg",
       categoria: "Momo"
     },
     {
       titulo: "Momo y Nata",
       descripcion: "Momo y la pequeña Natita",
-      imagen: "/momoynata.jpeg",
+      imagen: "momoynata.jpeg",
       categoria: "MomoYNata"
     },
     {
       titulo: "Roma",
       descripcion: "Ella es mi hermosa perra Roma",
-      imagen: "/roma.jpeg",
+      imagen: "roma.jpeg",
       categoria: "Roma"
     },
   ];
